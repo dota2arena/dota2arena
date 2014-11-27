@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  include Abilities::UserRoles
+  include Abilities::UserRolesCheck
 end
