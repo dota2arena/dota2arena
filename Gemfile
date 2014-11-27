@@ -43,3 +43,4 @@ group :development, :test do
 end
 
 gem 'omniauth-steam', '~> 1.0.3'
+gem 'semantic-ui-rails', '~> 0.18.0'
