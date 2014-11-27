@@ -42,5 +42,14 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+# Steam login
 gem 'omniauth-steam', '~> 1.0.3'
-gem 'semantic-ui-rails', '~> 0.18.0'
+
+# Sematic ui
+gem 'therubyracer', platforms: :ruby # or any other runtime
+gem 'less-rails'
+gem 'autoprefixer-rails'
+gem 'semantic-ui-rails'
+
+# Bootstrap
+gem 'twitter-bootstrap-rails'
