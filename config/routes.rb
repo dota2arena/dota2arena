@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
+
+  # Static pages
   root 'static_pages#index'
-
   get '/blog' => 'static_pages#blog'
-
   get  '/about' =>'static_pages#about'
+
+
+  # Steam Login
+  post '/auth/steam/callback' => 'steam_login#create_steam_account'
+  get 'sign_out' => 'steam_login#sign_out'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -12,8 +12,11 @@
     </div>
     <div class="container-fluid">
       <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav center">
-          <li><a href="#about">Blog</a></li>
+        <ul class="nav navbar-nav navbar-left">
+          <%= render 'layouts/navbar/links' %>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <%= render 'layouts/navbar/player_info' %>
         </ul>
       </div>
     </div>

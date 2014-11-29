@@ -41,15 +41,19 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara', '~> 2.4.4'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails' , '~> 4.5.0'
 end
 
+# Secret keys
+gem 'figaro', '~> 1.0.0'
+
 # Steam login
+gem 'ruby-openid', git: 'https://github.com/openid/ruby-openid.git'
 gem 'omniauth-steam', '~> 1.0.3'
 
 # Sematic ui
 gem 'therubyracer', platforms: :ruby # or any other runtime
-gem 'less-rails'
+gem 'less-rails', '~> 2.6.0'
 gem 'autoprefixer-rails'
 gem 'semantic-ui-rails'
 

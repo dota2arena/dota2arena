@@ -17,7 +17,7 @@ module Dota2arena
   class Application < Rails::Application
 
     config.middleware.use OmniAuth::Builder do
-      provider :steam, '52631328E26C1399587CBB0BB1E735F6'
+      provider :steam, ENV['steam_key_1']
     end
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
